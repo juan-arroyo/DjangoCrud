@@ -3,7 +3,18 @@
 
 <p>This is a CRUD project made with the Django framework. Next I will leave you the indications so that you can mount the server on your computer</p>
 
+<ol>
+  <li>Install python in your computer</li>
+  <li>Create a folder for the proyect</li>
+  <li>Create a virtual environment to install the dependencies of the project (you can choose virtualenv)</li>
+  <li>Activate the virtual environment : tutorial\Scripts\activate</li>
+  <li>Check if the virtual environment is activated. Clone the repository : git clone https://github.com/juan-arroyo/djangoCrud.git</li>
+  <li>Now you are going to install the dependencies what the project needs : pip install -r requirements.txt
+  </li>
+  <li>Finally, you need to make the migrations to the database : python manage.py migrate</li>
+  <li>Run the server in local: python manage.py runserver and enjoy</li>
 
+</ol> 
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
