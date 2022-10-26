@@ -1,0 +1,25 @@
+{% extends 'base.html' %} 
+{% block title %} Home {% endblock title %} 
+{% block content %}
+    <div class="p-5 bg-light">
+        {% if user.is_authenticated %}
+        <div class="container">
+            <h1 class="display-3">Welcome <strong class="text-success">{{user.username}}</strong></h1>
+            <p class="lead">You can do the basic operations of a CRUD</p>
+            <hr class="my-2" />
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href={% url 'create_book' %} role="button">Add a new Book</a>
+            </p>
+        </div>
+        {% else %}
+        <div class="container">
+            <h1 class="display-3">Welcome to the book's store</h1>
+            <p class="lead">Let's to add a some books</p>
+            <hr class="my-2" />
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href={% url 'signin' %} role="button">Start</a>
+            </p>
+        </div>
+        {% endif %}
+    </div>
+{% endblock content %}

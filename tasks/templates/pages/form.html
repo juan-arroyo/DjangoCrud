@@ -1,0 +1,27 @@
+<form method="POST">
+	{% csrf_token %} 
+    {% for section in form %}
+	<div class="mb-3">
+		<label for="" class="form-label">{{ section.label }}</label>
+		<input
+			type="{{ section.field.widget.input_type }}"
+			class="form-control"
+			name="{{ section.name }}"
+			id=""
+			aria-describedby="helpId"
+			placeholder="{{ section.label }}"
+			value="{{ section.value | default:"" }}"
+		/>
+	</div>
+	<div class="col-12 help-text">{{ section.errors }}</div>
+    {% endfor %}
+	<input
+		type="submit"
+		name=""
+		id=""
+		class="btn btn-success"
+		href="#"
+        value="Submit"
+	>
+	<a class="btn btn-primary" href="{% url 'books' %}" role="button">Cancel</a>
+</form>

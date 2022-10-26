@@ -1,0 +1,30 @@
+{% extends 'base.html' %} 
+{% block title %} Books {% endblock title %}
+{% block content %}
+        <div class="card-body">
+            <h4 class="card-title pt-3 pb-3 text-warning">Books</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for book in books %}
+                        <tr>
+                            <td>{{ book.id }}</td>
+                            <td>{{ book.title }}</td>
+                            <td>{{ book.description }}</td>
+                            <td> 
+                                <a name="" id="" class="btn btn-info" href="{% url 'edit_book' book.id %}" role="button">Edit</a> | 
+                                <a name="" id="" class="btn btn-danger" href="{% url 'delete_book' book.id %}" role="button">Delete</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+{% endblock content %}

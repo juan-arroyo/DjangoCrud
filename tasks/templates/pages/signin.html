@@ -1,0 +1,89 @@
+{% extends 'base.html' %} 
+{% block title %} Login {% endblock title %} 
+{%block content %}
+<div class="container h-100">
+	<div class="row d-flex justify-content-center align-items-center h-100">
+		<div class="col-lg-8 col-xl-7">
+			<div class="card text-black" style="border-radius: 25px">
+				<div class="card-body">
+					<div class="row justify-content-center">
+						<div
+							class="col-md-10 col-lg-6 col-xl-6 order-2 order-lg-1"
+						>
+							<p class="h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">
+								Login
+							</p>
+
+							<form class="mx-1 mx-md-4" method="POST">
+								<section class="text-danger">
+									<small>{{error}}</small>
+								</section>
+								{% csrf_token %}
+								<div
+									class="d-flex flex-row align-items-center mb-4"
+								>
+									<div class="form-outline flex-fill mb-0">
+										<input
+											type="text"
+											id="username"
+											name="username"
+											class="form-control"
+											placeholder="Insert a username"
+											required
+										/>
+									</div>
+								</div>
+
+								<div
+									class="d-flex flex-row align-items-center mb-4"
+								>
+									<div class="form-outline flex-fill mb-0">
+										<input
+											type="password"
+											id="password"
+											name="password"
+											class="form-control"
+											placeholder="Insert a password"
+											required
+										/>
+									</div>
+								</div>
+
+								<div
+									class="d-flex flex-row align-items-center mb-4"
+								>
+									<div class="form-outline flex-fill mb-0">
+										<button
+											class="btn btn-primary btn-lg mb-4"
+										>
+											Login
+										</button>
+										<label
+											class="form-check-label"
+											for="form2Example3"
+										>
+											Don't have an account?
+											<a href="{% url 'register' %}"
+												>Register</a
+											>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div
+							class="col-md-10 col-lg-6 col-xl-6 d-flex align-items-center order-1 order-lg-2"
+						>
+							<img
+								src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+								class="img-fluid"
+								alt="Sample image"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}
