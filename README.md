@@ -1,6 +1,10 @@
 <h1 align="center">Hi 👋, I'm Juan Manuel Arroyo</h1>
 <h3 align="center">A passionate full stack developer from Spain</h3>
 
+<p>This is a CRUD project made with the Django framework. Next I will leave you the indications so that you can mount the server on your computer</p>
+
+
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/juanmarroyo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="juanmarroyo" height="30" width="40" /></a>
