@@ -1,6 +1,10 @@
 <h1 align="center">Hi 👋, I'm Juan Manuel Arroyo</h1>
 <h3 align="center">A passionate full stack developer from Spain</h3>
 
+- 🌱 I’m currently learning **Django and ReactJs**
+- 👨‍💻 All about me and my projects are available at [https://jmarroyo.es/](https://jmarroyo.es/)
+
+
 <p>This is a CRUD project made with the Django framework. Next I will leave you the indications so that you can mount the server on your computer</p>
 
 <ol>
